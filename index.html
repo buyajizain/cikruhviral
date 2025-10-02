@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cikruh Viral</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+   <!-- Fons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body class="font-sans bg-white">
+
+  <!-- Navbar -->
+  <nav class="fixed lg:px-20 w-full shadow-md z-50 bg-red-800 sm:px-40">
+    <div class="container mx-auto flex justify-between items-center py-2 px-6">
+      <a href="#" class="text-2xl font-bold text-orange-500 hover:text-orange-600 transition"><img src="logo.png" alt="" style="width: 60px;"></a>
+      <!-- Menu Desktop -->
+      <ul class="hidden md:flex space-x-6 text-gray-200 font-medium">
+        <li><a href="#hero" class="hover:text-orange-500 transition">Home</a></li>
+        <li><a href="#products" class="hover:text-orange-500 transition">Produk</a></li>
+        <li><a href="#about" class="hover:text-orange-500 transition">Tentang</a></li>
+        <li><a href="#contact" class="hover:text-orange-500 transition">Kontak</a></li>
+      </ul>
+      <!-- Button Mobile -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <ul class="flex flex-col space-y-4 p-6 text-gray-700 font-medium">
+        <li><a href="#hero" class="hover:text-orange-500 transition">Home</a></li>
+        <li><a href="#products" class="hover:text-orange-500 transition">Produk</a></li>
+        <li><a href="#about" class="hover:text-orange-500 transition">Tentang</a></li>
+        <li><a href="#contact" class="hover:text-orange-500 transition">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero pt-40 pb-20 h-screen flex items-center justify-center bg-orange-50 relative">
+    <div class="container mx-auto px-20 text-center md:text-left flex flex-col md:flex-row items-center gap-5">
+      <!-- Text -->
+      <div class=" animate-fadeIn">
+        <h1 class="text-4xl md:text-6xl mb-6 font-bold max-sm:text-xl" style="font-family: Poppins;">
+            <span id="typedText"></span><span class="cursor">_</span>
+        </h1>
+        <h1 class=" md:text-2xl max-sm:text-lg">Renyah Sampai Remuk, Pedasnya Nempel di Lidah</h1>
+        <p class="text-gray-600 md:text-lg mb-6 pt-6 max-sm:text-xs">Nikmati sensasi basreng remuk favorit semua orang, siap bikin ketagihan.</p>
+        <a href="https://wa.me/6281394314326" target="_blank" class="btn-fire bg-black">
+            <span class="max-sm:text-xs">Pesan Sekarang 🚀</span>
+            <video autoplay loop muted playsinline class="fire-border">
+                <source src="fire.mp4" type="video/mp4">
+            </video>
+        </a>
+        <!-- <a href="https://wa.me/628123456789" target="_blank"
+            class="relative inline-block px-8 py-4 rounded-full font-semibold text-lg text-white overflow-hidden group">
+            <span class="absolute inset-0 rounded-full border-[3px] border-transparent 
+                        bg-gradient-to-r from-red-500 via-yellow-400 to-orange-500 
+                        animate-fire"></span>
+            <span class="relative z-10 bg-black px-8 py-4 rounded-full group-hover:bg-gray-900 transition">
+                Pesan Sekarang 🚀
+            </span>
+        </a> -->
+      </div>
+      <!-- Image -->
+      <div class="flex-1">
+        <img src="10.png" alt="Cikruh Viral" class="rounded-xl shadow-sm mx-auto md:ml-auto w-64 md:w-96 animate-float">
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section id="products" class="pt-40 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12 animate-fadeIn">Produk Unggulan</h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Card Produk -->
+        <div class="bg-orange-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition animate-fadeIn">
+          <img src="10.png" alt="Basreng Pedas" class="w-full h-80 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Basreng Pedas</h3>
+            <p class="text-gray-600 mb-4">Renyah, pedasnya nempel, bikin nagih setiap gigitannya.</p>
+            <a href="#contact" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="bg-orange-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition animate-fadeIn delay-200">
+          <img src="10.png" alt="Basreng Original" class="w-full h-80 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Basreng Original</h3>
+            <p class="text-gray-600 mb-4">Renyah klasik tanpa tambahan rasa, cocok untuk semua orang.</p>
+            <a href="#contact" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="bg-orange-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition animate-fadeIn delay-400">
+          <img src="10.png" alt="Basreng Keju" class="w-full h-80 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Basreng Keju</h3>
+            <p class="text-gray-600 mb-4">Perpaduan renyah pedas dan gurihnya keju yang meleleh.</p>
+            <a href="#contact" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+        <div class="text-center my-20">
+            <a href="https://wa.me/6281394314326" target="_blank"
+                class="inline-block bg-orange-600 text-white px-20 py-3 rounded-full font-semibold shadow-lg hover:bg-orange-700 transition">
+                Coba Sekarang!
+            </a>
+        </div>
+
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+<section id="about" class="py-20 bg-orange-50">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- Gambar -->
+    <div class="flex-1 animate-fadeIn">
+      <img src="10.png" alt="Tentang Cikruh Viral" class="rounded-xl shadow-lg w-full object-cover">
+    </div>
+    
+    <!-- Teks -->
+    <div class="flex-1 animate-fadeIn delay-200">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Tentang Cikruh Viral</h2>
+      <p class="text-gray-600 mb-4 leading-relaxed">
+        Cikruh Viral hadir untuk membawa camilan khas basreng yang renyah, gurih, dan pedasnya nempel. 
+        Dibuat dengan bahan berkualitas dan bumbu pilihan, setiap gigitan menghadirkan sensasi yang bikin ketagihan. 
+      </p>
+      <p class="text-gray-600 mb-6 leading-relaxed">
+        Kami percaya camilan bukan sekadar makanan, tapi juga momen kebersamaan. 
+        Karena itu, setiap produk Cikruh Viral dibuat dengan sepenuh hati agar bisa dinikmati siapa saja.
+      </p>
+      <a href="#products" class="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition transform hover:scale-105 inline-block">Lihat Produk</a>
+    </div>
+  </div>
+</section>
+
+<!-- USP Section -->
+<section id="usp" class="py-20 bg-orange-50">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">
+      Kenapa Harus Pilih <span class="text-orange-500">Cikruh Viral?</span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- USP 1 -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+        <div class="text-orange-500 text-5xl mb-4">🌶️</div>
+        <h3 class="text-xl font-semibold mb-3">Pedas Nagih</h3>
+        <p class="text-gray-600">
+          Level kepedasan pas buat semua lidah. Bikin nagih, bukan sekadar pedas.
+        </p>
+      </div>
+
+      <!-- USP 2 -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+        <div class="text-orange-500 text-5xl mb-4">💰</div>
+        <h3 class="text-xl font-semibold mb-3">Harga Ramah Kantong</h3>
+        <p class="text-gray-600">
+          Camilan premium dengan harga terjangkau. Cocok buat semua kalangan.
+        </p>
+      </div>
+
+      <!-- USP 3 -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+        <div class="text-orange-500 text-5xl mb-4">🥳</div>
+        <h3 class="text-xl font-semibold mb-3">Teman Segala Momen</h3>
+        <p class="text-gray-600">
+          Mau nonton, nongkrong, atau belajar? Cikruh Viral selalu cocok nemenin.
+        </p>
+      </div>
+
+    </div>
+    <div class="text-center mt-10">
+        <a href="https://wa.me/6281394314326" target="_blank"
+            class="inline-block bg-red-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-red-700 transition">
+            Dapatkan Cikruh Viral 🔥
+        </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimoni" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10">Apa Kata Mereka?</h2>
+    
+    <!-- Wrapper -->
+    <div class="relative overflow-hidden">
+      <div id="testimonialSlider" class="flex transition-transform duration-700 ease-in-out">
+        
+        <!-- Card 1 -->
+        <div class="min-w-full px-6">
+          <div class="bg-white shadow-lg rounded-xl p-8">
+            <p class="text-gray-600 italic">"Cikruh Viral enak banget! Renyahnya nagih, pedesnya pas."</p>
+            <h4 class="mt-4 font-semibold text-gray-800">– Andi, Bandung</h4>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="min-w-full px-6">
+          <div class="bg-white shadow-lg rounded-xl p-8">
+            <p class="text-gray-600 italic">"Snack wajib kalau lagi nongkrong bareng temen."</p>
+            <h4 class="mt-4 font-semibold text-gray-800">– Rina, Jakarta</h4>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="min-w-full px-6">
+          <div class="bg-white shadow-lg rounded-xl p-8">
+            <p class="text-gray-600 italic">"Harga ramah kantong, rasa mantap jiwa!"</p>
+            <h4 class="mt-4 font-semibold text-gray-800">– Budi, Surabaya</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+        <a href="https://wa.me/6281394314326" target="_blank"
+            class="inline-block bg-red-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-red-700 transition">
+            Dapatkan Cikruh Viral 🔥
+        </a>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+<!-- Promo Section -->
+<section id="promo" class="py-20 bg-gradient-to-r from-orange-500 to-red-500 text-white text-center relative overflow-hidden">
+  <div class="container mx-auto px-6 relative z-10">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+      Promo Spesial Minggu Ini 🎉
+    </h2>
+    <p class="max-w-xl mx-auto mb-8 text-lg">
+      Nikmati <span class="font-bold">Diskon 20%</span> untuk setiap pembelian Cikruh Viral.  
+      Buruan, promo hanya berlaku sampai waktu habis!
+    </p>
+
+    <!-- Countdown Timer -->
+    <div class="flex justify-center space-x-6 mb-10" id="countdown">
+      <div class="bg-white text-gray-900 rounded-lg p-4 w-20">
+        <div class="text-2xl font-bold" id="days">00</div>
+        <span class="text-sm">Hari</span>
+      </div>
+      <div class="bg-white text-gray-900 rounded-lg p-4 w-20">
+        <div class="text-2xl font-bold" id="hours">00</div>
+        <span class="text-sm">Jam</span>
+      </div>
+      <div class="bg-white text-gray-900 rounded-lg p-4 w-20">
+        <div class="text-2xl font-bold" id="minutes">00</div>
+        <span class="text-sm">Menit</span>
+      </div>
+      <div class="bg-white text-gray-900 rounded-lg p-4 w-20">
+        <div class="text-2xl font-bold" id="seconds">00</div>
+        <span class="text-sm">Detik</span>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <a href="https://wa.me/6281394314326" target="_blank"
+       class="max-sm:text-xs inline-block bg-white text-orange-600 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:bg-gray-100 transition transform hover:-translate-y-1">
+      Pesan Sekarang via WhatsApp 🚀
+    </a>
+  </div>
+
+  <!-- Background overlay effect -->
+  <div class="absolute inset-0 bg-black opacity-20"></div>
+</section>
+
+
+
+<!-- Contact Section dengan Parallax -->
+<section id="contact" class="relative bg-fixed bg-center bg-cover py-20" style="background-image: url('3.png');">
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative container mx-auto px-6 text-center text-white">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Hubungi Kami</h2>
+    <p class="max-w-xl mx-auto mb-8 text-gray-200">
+      Punya pertanyaan atau mau pesan Cikruh Viral?  
+      Hubungi kami sekarang juga!
+    </p>
+
+    <form class="max-w-lg mx-auto space-y-4">
+      <input type="text" placeholder="Nama" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-2 focus:ring-orange-500" required>
+      <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-2 focus:ring-orange-500" required>
+      <textarea placeholder="Pesan" rows="4" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-2 focus:ring-orange-500" required></textarea>
+      <button type="submit" class="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-lg font-semibold text-white w-full">
+        Kirim Pesan
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="galeri" class="py-20 bg-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Galeri Cikruh Viral 📸</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+      <!-- Item 1 -->
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="1.png" alt="Basreng 1" class="w-full h-60 object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+          <p class="text-white font-semibold text-lg">Basreng Pedas Level 1</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="2.png" alt="Basreng 2" class="w-full h-60 object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+          <p class="text-white font-semibold text-lg">Basreng Pedas Level 2</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="3.png" alt="Basreng 3" class="w-full h-60 object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+          <p class="text-white font-semibold text-lg">Basreng Original</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="4.png" alt="Basreng 4" class="w-full h-60 object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+          <p class="text-white font-semibold text-lg">Packaging Eksklusif</p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="5.png" alt="Basreng 4" class="w-full h-60 object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+          <p class="text-white font-semibold text-lg">Packaging Eksklusif</p>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="6.png" alt="Basreng 4" class="w-full h-60 object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+          <p class="text-white font-semibold text-lg">Packaging Eksklusif</p>
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="7.png" alt="Basreng 4" class="w-full h-60 object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+          <p class="text-white font-semibold text-lg">Packaging Eksklusif</p>
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="8.png" alt="Basreng 4" class="w-full h-60 object-cover transform group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+          <p class="text-white font-semibold text-lg">Packaging Eksklusif</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section id="faq" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+      Pertanyaan yang Sering Ditanyakan ❓
+    </h2>
+
+    <div class="max-w-2xl mx-auto space-y-4">
+
+      <!-- Item 1 -->
+      <div class="border border-gray-200 rounded-lg">
+        <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-gray-800 focus:outline-none faq-toggle">
+          Apakah bisa COD?
+          <span class="transition-transform duration-300">+</span>
+        </button>
+        <div class="hidden px-6 pb-4 text-gray-600">
+          Ya, kami menyediakan opsi COD (Cash on Delivery) agar lebih aman dan nyaman.
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="border border-gray-200 rounded-lg">
+        <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-gray-800 focus:outline-none faq-toggle">
+          Berapa lama pengiriman?
+          <span class="transition-transform duration-300">+</span>
+        </button>
+        <div class="hidden px-6 pb-4 text-gray-600">
+          Pengiriman biasanya 1–3 hari kerja tergantung lokasi kamu.
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="border border-gray-200 rounded-lg">
+        <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-gray-800 focus:outline-none faq-toggle">
+          Ada pilihan level pedas?
+          <span class="transition-transform duration-300">+</span>
+        </button>
+        <div class="hidden px-6 pb-4 text-gray-600">
+          Tentu! Ada level 1 (pedas ringan), level 2 (pedas sedang), dan level 3 (super pedas).
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="border border-gray-200 rounded-lg">
+        <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-gray-800 focus:outline-none faq-toggle">
+          Apakah produk ini halal?
+          <span class="transition-transform duration-300">+</span>
+        </button>
+        <div class="hidden px-6 pb-4 text-gray-600">
+          Ya, produk Cikruh Viral 100% halal dan sudah melalui proses produksi higienis.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-12">
+        <a href="https://wa.me/6281394314326" target="_blank"
+            class="inline-block bg-green-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-green-700 transition">
+            Masih Bingung? Chat Admin Sekarang 💬
+        </a>
+    </div>
+
+
+
+
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-10">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Brand -->
+    <div>
+      <h3 class="text-2xl font-bold text-orange-500 mb-4"><img src="logo.png" alt="" style="width: 80px;"></h3>
+      <p class="text-gray-400">
+        Renyah sampai remuk, pedasnya nempel!  
+        Camilan kekinian yang siap nemenin momen seru kamu.
+      </p>
+    </div>
+
+    <!-- Menu -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Menu</h4>
+      <ul class="space-y-2">
+        <li><a href="#hero" class="hover:text-orange-400 transition">Home</a></li>
+        <li><a href="#products" class="hover:text-orange-400 transition">Produk</a></li>
+        <li><a href="#about" class="hover:text-orange-400 transition">Tentang</a></li>
+        <li><a href="#contact" class="hover:text-orange-400 transition">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Kontak -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Kontak</h4>
+      <ul class="space-y-2">
+        <li>📍 Bandung, Indonesia</li>
+        <li>📧 <a href="mailto:info@cikruhviral.com" class="hover:text-orange-400 transition">info@cikruhviral.com</a></li>
+        <li>📱 <a href="https://wa.me/6281394314326" target="_blank" class="hover:text-orange-400 transition">+62 813-9431-4326</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Copy -->
+  <div class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+    © 2025 Cikruh Viral. Semua Hak Dilindungi.
+  </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

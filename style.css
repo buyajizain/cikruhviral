@@ -1,0 +1,123 @@
+
+
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  body, p, a, span, li {
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+.cursor {
+  display: inline-block;
+  margin-left: 5px;
+  width: 3px;
+  background: white;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+
+
+.btn-fire {
+  position: relative;
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  background: black;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-fire span {
+  position: relative;
+  z-index: 2;
+}
+
+.fire-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  
+  /* bikin video hanya kelihatan di pinggiran (stroke) */
+  clip-path: polygon(
+    0 0, 100% 0, 100% 100%, 0 100%, 
+    0 0, 3% 3%, 97% 3%, 97% 97%, 3% 97%, 3% 3%
+  );
+
+  filter: hue-rotate(30deg) saturate(5) brightness(0.8);
+  mix-blend-mode: screen; /* coba juga lighten atau multiply */
+}
+
+
+
+
+/* efek tombol api */
+/* @keyframes fire {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-fire {
+  background-size: 200% 200%;
+  animation: fire 3s linear infinite;
+} */
+
+
+
+/* Parallax effect (untuk browser modern) */
+#contact {
+  background-attachment: fixed;
+}
+
+
+
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-fadeIn.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-fadeIn.delay-400 {
+  animation-delay: 0.4s;
+}
+
+/* Animasi Floating Image */
+@keyframes float {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-10px);}
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+  .hero {
+  padding-top: 72px; /* atau sesuai tinggi navbar */
+}
+
+}
