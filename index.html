@@ -27,68 +27,74 @@
 <body class="font-sans bg-white">
 
   <!-- Navbar -->
-  <nav class="fixed lg:px-20 w-full shadow-md z-50 bg-red-800 sm:px-40">
-    <div class="container mx-auto flex justify-between items-center py-2 px-6">
-      <a href="#" class="text-2xl font-bold text-orange-500 hover:text-orange-600 transition"><img src="logo.png" alt="" style="width: 60px;"></a>
-      <!-- Menu Desktop -->
-      <ul class="hidden md:flex space-x-6 text-gray-200 font-medium">
-        <li><a href="#hero" class="hover:text-orange-500 transition">Home</a></li>
-        <li><a href="#products" class="hover:text-orange-500 transition">Produk</a></li>
-        <li><a href="#about" class="hover:text-orange-500 transition">Tentang</a></li>
-        <li><a href="#contact" class="hover:text-orange-500 transition">Kontak</a></li>
-      </ul>
-      <!-- Button Mobile -->
-      <div class="md:hidden">
-        <button id="menu-btn" class="text-gray-700 focus:outline-none">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 lg:px-20 sm:px-40">
+  <div id="navbar-container" class="container mx-auto flex justify-between items-center py-8 px-20 transition-all duration-300">
+    
+    <!-- Logo -->
+    <a href="#" class="transition">
+      <img src="logo.png" alt="Cikruh Viral" style="width: 60px;">
+    </a>
+
+    <!-- Menu Desktop -->
+    <ul id="menu-desktop" class="hidden md:flex space-x-6 text-gray-200 font-medium">
+      <li><a href="#hero" class="hover:border-b-2 transition-all duration-1">Home</a></li>
+      <li><a href="#products" class="hover:border-b-2 transition-all duration-1">Produk</a></li>
+      <li><a href="#about" class="hover:border-b-2 transition-all duration-1">Tentang</a></li>
+      <li><a href="#contact" class="hover:border-b-2 transition-all duration-1">Kontak</a></li>
+    </ul>
+
+    <!-- Button Mobile -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-gray-800 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
     </div>
-    <!-- Menu Mobile -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
-      <ul class="flex flex-col space-y-4 p-6 text-gray-700 font-medium">
-        <li><a href="#hero" class="hover:text-orange-500 transition">Home</a></li>
-        <li><a href="#products" class="hover:text-orange-500 transition">Produk</a></li>
-        <li><a href="#about" class="hover:text-orange-500 transition">Tentang</a></li>
-        <li><a href="#contact" class="hover:text-orange-500 transition">Kontak</a></li>
-      </ul>
-    </div>
-  </nav>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+    <ul class="flex flex-col space-y-4 p-6 text-gray-700 font-medium">
+      <li><a href="#hero" class="hover:text-orange-500 transition">Home</a></li>
+      <li><a href="#products" class="hover:text-orange-500 transition">Produk</a></li>
+      <li><a href="#about" class="hover:text-orange-500 transition">Tentang</a></li>
+      <li><a href="#contact" class="hover:text-orange-500 transition">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
 
   <!-- Hero -->
-  <section id="hero" class="hero pt-40 pb-20 h-screen flex items-center justify-center bg-orange-50 relative">
-    <div class="container mx-auto px-20 text-center md:text-left flex flex-col md:flex-row items-center gap-5">
-      <!-- Text -->
-      <div class=" animate-fadeIn">
-        <h1 class="text-4xl md:text-6xl mb-6 font-bold max-sm:text-xl" style="font-family: Poppins;">
-            <span id="typedText"></span><span class="cursor">_</span>
-        </h1>
-        <h1 class=" md:text-2xl max-sm:text-lg">Renyah Sampai Remuk, Pedasnya Nempel di Lidah</h1>
-        <p class="text-gray-600 md:text-lg mb-6 pt-6 max-sm:text-xs">Nikmati sensasi basreng remuk favorit semua orang, siap bikin ketagihan.</p>
-        <a href="https://wa.me/6281394314326" target="_blank" class="btn-fire bg-black">
-            <span class="max-sm:text-xs">Pesan Sekarang 🚀</span>
-            <video autoplay loop muted playsinline class="fire-border">
-                <source src="fire.mp4" type="video/mp4">
-            </video>
-        </a>
-        <!-- <a href="https://wa.me/628123456789" target="_blank"
-            class="relative inline-block px-8 py-4 rounded-full font-semibold text-lg text-white overflow-hidden group">
-            <span class="absolute inset-0 rounded-full border-[3px] border-transparent 
-                        bg-gradient-to-r from-red-500 via-yellow-400 to-orange-500 
-                        animate-fire"></span>
-            <span class="relative z-10 bg-black px-8 py-4 rounded-full group-hover:bg-gray-900 transition">
-                Pesan Sekarang 🚀
-            </span>
-        </a> -->
-      </div>
-      <!-- Image -->
-      <div class="flex-1">
-        <img src="10.png" alt="Cikruh Viral" class="rounded-xl shadow-sm mx-auto md:ml-auto w-64 md:w-96 animate-float">
-      </div>
+<section id="hero" 
+  class="hero pt-40 pb-20 flex items-center justify-center relative bg-cover bg-center"
+  style="background-image: url('bg.png');">
+  
+  <div class="grid-cols-2 mx-auto px-20 text-center md:text-left flex flex-col md:flex-row items-center gap-5  rounded-2xl p-6">
+    <!-- Text -->
+    <div class="grid-cols-1 md:w-full sm:w-60">
+      <img src="standing persegi.png" alt="Cikruh Viral" class="mx-auto md:ml-auto w-full rounded-2xl animate-float">
     </div>
-  </section>
+    <div class="animate-fadeIn lg:text-right">
+      <h1 class="md:text-4xl mb-6 font-bold max-sm:text-xl text-gray-200 text-shadow-lg/30" style="font-family: Poppins;">
+          <span id="typedText"></span><span class="cursor">_</span>
+      </h1>
+      <h1 class="md:text-2xl max-sm:text-lg text-gray-200"  style="font-family: Poppins; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">Renyah Sampai Remuk, Pedasnya Nempel di Lidah</h1>
+      <p class="text-gray-800 md:text-lg py-6 max-sm:text-xs">Nikmati sensasi basreng (bakso goreng) renyah khas Bandung yang dipadukan dengan bumbu daun jeruk wangi dan pedas nagih.
+      Cocok buat nemenin belajar, nongkrong, kerja, atau santai bareng teman.</p>
+      <a href="https://wa.me/6281394314326" target="_blank" class="btn-fire bg-black">
+          <span class="max-sm:text-xs">Pesan Sekarang 🚀</span>
+          <video autoplay loop muted playsinline class="fire-border">
+              <source src="fire.mp4" type="video/mp4">
+          </video>
+      </a>
+    </div>
+  </div>
+</section>
+
 
   <!-- Produk -->
   <section id="products" class="pt-40 bg-white">
@@ -98,7 +104,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <!-- Card Produk -->
         <div class="bg-orange-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition animate-fadeIn">
-          <img src="10.png" alt="Basreng Pedas" class="w-full h-80 object-cover">
+          <img src="standing persegi.png" alt="Basreng Pedas" class="w-full h-80 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-2">Basreng Pedas</h3>
             <p class="text-gray-600 mb-4">Renyah, pedasnya nempel, bikin nagih setiap gigitannya.</p>
@@ -127,7 +133,7 @@
 
         <div class="text-center my-20">
             <a href="https://wa.me/6281394314326" target="_blank"
-                class="inline-block bg-orange-600 text-white px-20 py-3 rounded-full font-semibold shadow-lg hover:bg-orange-700 transition">
+                class="inline-block bg-red-600 text-white px-20 py-3 rounded-full font-semibold shadow-lg hover:bg-orange-700 transition">
                 Coba Sekarang!
             </a>
         </div>
@@ -142,7 +148,7 @@
     
     <!-- Gambar -->
     <div class="flex-1 animate-fadeIn">
-      <img src="10.png" alt="Tentang Cikruh Viral" class="rounded-xl shadow-lg w-full object-cover">
+      <img src="11.png" alt="Tentang Cikruh Viral" class="rounded-xl shadow-lg w-60 mx-auto object-cover">
     </div>
     
     <!-- Teks -->
@@ -156,7 +162,7 @@
         Kami percaya camilan bukan sekadar makanan, tapi juga momen kebersamaan. 
         Karena itu, setiap produk Cikruh Viral dibuat dengan sepenuh hati agar bisa dinikmati siapa saja.
       </p>
-      <a href="#products" class="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition transform hover:scale-105 inline-block">Lihat Produk</a>
+      <a href="#products" class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition transform hover:scale-105 inline-block">Lihat Produk</a>
     </div>
   </div>
 </section>

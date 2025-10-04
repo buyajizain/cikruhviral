@@ -1,16 +1,39 @@
 // Toggle mobile menu
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
+const navbar = document.getElementById('navbar');
+const navbarContainer = document.getElementById('navbar-container');
+const menuDesktop = document.getElementById('menu-desktop'); 
 
 menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
 });
+
+// Navbar background on scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('bg-red/40', 'backdrop-blur-xl', 'shadow-md');
+      navbarContainer.classList.remove('py-8', 'px-12');
+      navbarContainer.classList.add('py-2', 'px-6');
+      menuDesktop.classList.remove('text-gray-200');
+      menuDesktop.classList.add('text-gray-800');
+    } else {
+      navbar.classList.remove('bg-white/40', 'backdrop-blur-xl', 'shadow-md');
+      navbarContainer.classList.add('py-8', 'px-12');
+      navbarContainer.classList.remove('py-2', 'px-6');
+      menuDesktop.classList.add('text-gray-200');
+      menuDesktop.classList.remove('text-gray-800');
+    }
+  });
+
+
 
 // mengetik
 document.addEventListener("DOMContentLoaded", () => {
   const typedText = document.getElementById("typedText");
   const textArray = [
     "Cikruh Viral",
+    "Basreng Remuk",
     
   ];
   let arrayIndex = 0;
@@ -39,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   type();
 });
-
 
 
 
