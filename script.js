@@ -27,7 +27,6 @@ menuBtn.addEventListener('click', () => {
   });
 
 
-
 // mengetik
 document.addEventListener("DOMContentLoaded", () => {
   const typedText = document.getElementById("typedText");

@@ -115,6 +115,9 @@
   animation: float 3s ease-in-out infinite;
 }
 
+
+
+
 @media (min-width: 768px) {
   .hero {
   padding-top: 72px; /* atau sesuai tinggi navbar */
