@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const typedText = document.getElementById("typedText");
   const textArray = [
     "Cikruh Viral",
-    "Basreng Remuk",
+    "Basreng Cikruh",
     
   ];
   let arrayIndex = 0;
@@ -136,6 +136,53 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCountdown();
   intervalId = setInterval(updateCountdown, 1000);
 });
+
+
+
+
+document.getElementById('waForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const sendBtn = document.getElementById('sendBtn');
+    const alertBox = document.getElementById('alertSuccess');
+
+    // Ganti dengan nomor WhatsApp kamu (format internasional, tanpa + atau 0)
+    const phoneNumber = "6281394314326";
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+      alert("Harap isi semua data sebelum mengirim.");
+      return;
+    }
+
+    // Ubah tombol menjadi loading
+    sendBtn.disabled = true;
+    sendBtn.textContent = "Mengirim...";
+
+    const text = `Halo Cikruh Viral!%0ASaya ingin pesan / tanya nih 👇%0A%0A*Nama:* ${name}%0A*Email:* ${email}%0A*Pesan:* ${message}`;
+    const url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+    // Buka WhatsApp di tab baru
+    window.open(url, '_blank');
+
+    // Tampilkan alert sukses
+    alertBox.classList.remove('hidden');
+
+    // Reset form setelah kirim
+    document.getElementById('waForm').reset();
+
+    // Kembalikan tombol ke semula setelah beberapa detik
+    setTimeout(() => {
+      sendBtn.disabled = false;
+      sendBtn.textContent = "Kirim Pesan";
+    }, 2000);
+  });
+
+
+
 
 
 // testimoni slider
